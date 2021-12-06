@@ -89,6 +89,8 @@ img {
   background-color: var(--accent-color);
 }
 .primary-btn {
+  min-width: 200px;
+  min-height: 50px;
   padding: 10px 32px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -470,7 +472,6 @@ img {
 .container-join {
   justify-content: flex-start;
   margin-left: 70px;
-  margin-right: 93px;
 }
 .join-title {
   font-size: 14px;
@@ -478,7 +479,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .join-list {
   display: flex;
@@ -502,18 +503,17 @@ img {
   transition: background-color var(--transition-cubic);
 }
 
-.container-mailing {
-  margin-right: auto;
+.mailing-container {
+  margin-left: auto;
 }
 
 .mailing-title {
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .mailing-input-wrap {
   display: flex;
@@ -525,7 +525,7 @@ img {
   background-color: transparent;
   transition: border-color var(--transition-cubic);
   width: 358px;
-  height: 50px;
+  min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .E-mail {
@@ -539,17 +539,15 @@ img {
 }
 
 .subscribe-btn {
-  width: 200px;
-  height: 50px;
-  padding: 10px 28px;
+  align-items: center;
   display: inline-flex;
-  justify-content: space-between;
 }
 
 .mailing-send {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-left: 10px;
 }
 /* ---------Портфолио------- */
 .filter-list {
@@ -689,11 +687,17 @@ img {
   margin-bottom: 12px;
 }
 
-.modal-form-field {
-  margin-bottom: 20px;
+.form-field {
+  margin-bottom: 10px;
 }
 
-.modal-input-wrap {
+.form-field-textarea {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrap {
   position: relative;
 }
 
@@ -705,7 +709,7 @@ img {
   outline: none;
   padding-left: 42px;
   background-color: transparent;
-  color: var(--primary-shade-2-text-color);
+  color: var(--primary-text-color);
   transition: border-color var(--transition-cubic);
 }
 
@@ -729,7 +733,7 @@ img {
 .modal-input-text {
   font-weight: normal;
   font-size: 12px;
-  line-height: 1, 17;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-shade-2-text-color);
   background-color: transparent;
@@ -754,6 +758,10 @@ img {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-field {
+  margin-bottom: 30px;
 }
 
 .modal-check-text {
@@ -788,7 +796,11 @@ img {
   background-color: var(--accent-color);
   border: none;
 }
+
 .modal-btn {
-  width: 200px;
-  margin-top: 30px;
+  background: var(--accent-color);
+}
+
+.modal-btn:hover {
+  background: #188ce8;
 }
