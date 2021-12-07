@@ -465,6 +465,14 @@ img {
   margin-bottom: 9px;
 }
 /* ------ПРИСОЕДИНЯЙТЕСЬ----- */
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 12px;
+}
 .container-logo-icons {
   display: flex;
   align-items: baseline;
@@ -472,14 +480,7 @@ img {
 .container-join {
   justify-content: flex-start;
   margin-left: 70px;
-}
-.join-title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-  margin-bottom: 12px;
+  margin-top: 12px;
 }
 .join-list {
   display: flex;
@@ -505,17 +506,10 @@ img {
 
 .mailing-container {
   margin-left: auto;
+  margin-top: 12px;
 }
 
-.mailing-title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-  margin-bottom: 12px;
-}
-.mailing-input-wrap {
+.mailing-input-form {
   display: flex;
 }
 .mailing-input {
@@ -738,6 +732,7 @@ img {
   color: var(--primary-shade-2-text-color);
   background-color: transparent;
   margin-bottom: 4px;
+  display: block;
 }
 
 .modal-text {
@@ -761,6 +756,7 @@ img {
 }
 
 .checkbox-field {
+  cursor: pointer;
   margin-bottom: 30px;
 }
 
@@ -795,12 +791,4 @@ img {
 .modal-check:checked + .modal-check-text span {
   background-color: var(--accent-color);
   border: none;
-}
-
-.modal-btn {
-  background: var(--accent-color);
-}
-
-.modal-btn:hover {
-  background: #188ce8;
 }
